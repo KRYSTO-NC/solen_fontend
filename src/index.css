@@ -1,13 +1,212 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,100;1,300&display=swap");
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  font-size: 62, 5%;
 }
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+p {
+  line-height: 1.7;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  line-height: 2.2;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 2rem;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.heading {
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  padding: 0 20px;
+  color: #fba332;
+  margin-bottom: 5rem;
+}
+
+.heading p {
+  color: hsl(0, 0%, 4%);
+  font-size: 1.3rem;
+}
+
+.form {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 5px;
+}
+
+.form-flex {
+  display: flex;
+  align-items: center;
+}
+.form-flex .form-group {
+  width: 100%;
+}
+.form-flex .form-group:first-child {
+  margin-right: 20px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-family: inherit;
+}
+
+.form-group label {
+  text-align: left;
+  display: block;
+  margin: 0 0 5px 3px;
+}
+
+.checkbox-group {
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  font-size: 22px;
+}
+
+.checkbox-group input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 4px;
+}
+
+.checkbox-group:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.checkbox-group input:checked ~ .checkmark {
+  background-color: #69bf23;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkbox-group input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkbox-group .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid #e5e5e5;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background: #4e5962;
+  border: none;
+  color: #fba332;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: center;
+  /* appearance: button; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 50rem;
+  margin: 1rem 0;
+}
+
+.btn svg {
+  margin-right: 8px;
+}
+
+.btn-reverse {
+  background: #fba332;
+  color: #e5e5e5;
+}
+
+.btn-block {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.btn-sm {
+  padding: 5px 1rem;
+  font-size: 0.8rem;
+}
+
+.btn-danger {
+  background: #c52929;
+  border: none;
+  color: #e5e5e5;
+}
+
+.btn-ok {
+  background: #69bf23;
+  border: none;
+  color: #e5e5e5;
+}
+
+.btn-back {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.btn:hover {
+  transform: scale(0.98);
+  box-shadow: rgba(0, 0, 0, 0.821) 0px 5px 15px;
+}/*# sourceMappingURL=index.css.map */

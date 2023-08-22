@@ -1,0 +1,46 @@
+
+
+
+
+@import "../../../SASS/reset";
+@import "../../../SASS/variables";
+
+.parameters-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.parameters-review {
+  flex: 1;
+  background-color: #fff;
+  border-radius: $radius;
+  padding: 2rem;
+  h2 {
+    display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1rem;
+  span {
+    color: $primary;
+  }
+  }
+}
+.parameters-actions {
+  flex: 1;
+  border: 2px solid red;
+  height: 70%;
+  margin-right: 2rem;
+
+  border-radius: $radius;
+  padding: 1rem;
+}
+
+
+.parameters-review-title{
+    text-align: center;
+    display: flex;
+    margin: auto;
+    width: 100%;
+  color: $primary;
+  text-transform: uppercase;
+}

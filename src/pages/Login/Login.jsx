@@ -80,16 +80,20 @@ function Login() {
 
   return (
     <div className="container-login">
-       <div className="background-image"></div> {/* Ajout de l'élément pour l'image de fond */}
-<div className="heading heading-login">
-
+      <div className="background-image"></div>{" "}
+      {/* Ajout de l'élément pour l'image de fond */}
+      <div className="heading heading-login">
         <h2>Connexion à l'Application Solen</h2>
         <p>
-        Bienvenue sur Solen, votre plateforme dédiée à la gestion énergétique, aux installations solaires, aux interventions et plus encore. Veuillez entrer vos identifiants pour accéder à votre espace personnalisé. Si vous êtes un nouvel utilisateur, contactez votre administrateur pour obtenir vos accès. Si vous avez oublié votre mot de passe, utilisez l'option de récupération ci-dessous. Commencez dès maintenant à transformer votre façon de gérer l'énergie avec Solen.
+          Bienvenue sur Solen, votre plateforme dédiée à la gestion énergétique,
+          aux installations solaires, aux interventions et plus encore. Veuillez
+          entrer vos identifiants pour accéder à votre espace personnalisé. Si
+          vous êtes un nouvel utilisateur, contactez votre administrateur pour
+          obtenir vos accès. Si vous avez oublié votre mot de passe, utilisez
+          l'option de récupération ci-dessous. Commencez dès maintenant à
+          transformer votre façon de gérer l'énergie avec Solen.
         </p>
-</div>
-     
-
+      </div>
       <div className="form-login-container">
         <section className="form">
           <h1>
@@ -124,7 +128,9 @@ function Login() {
             </div>
           </form>
           <div className="forgot-password">
-            <Link className="forgot-password" to={"/forgot-password"}>Mot de passe oublié ?</Link>
+            <Link className="forgot-password" to={"/forgot-password"}>
+              Mot de passe oublié ?
+            </Link>
           </div>
         </section>
       </div>

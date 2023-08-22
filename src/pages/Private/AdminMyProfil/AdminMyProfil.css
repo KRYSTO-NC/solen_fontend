@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,100;1,300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62, 5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+p {
+  line-height: 1.7;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  line-height: 2.2;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.parameters-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.parameters-review {
+  flex: 1;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 2rem;
+}
+.parameters-review h2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1rem;
+}
+.parameters-review h2 span {
+  color: #fba332;
+}
+
+.parameters-actions {
+  flex: 1;
+  border: 2px solid red;
+  height: 70%;
+  margin-right: 2rem;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.parameters-review-title {
+  text-align: center;
+  display: flex;
+  margin: auto;
+  width: 100%;
+  color: #fba332;
+  text-transform: uppercase;
+}/*# sourceMappingURL=AdminMyProfil.css.map */

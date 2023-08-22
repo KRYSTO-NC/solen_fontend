@@ -58,12 +58,12 @@ h3 {
 }
 
 .heading p {
-  color: hsl(0, 0%, 4%);
-  font-size: 1.3rem;
+  color: #4e5962;
+  font-size: 1rem;
 }
 
 .form {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -157,12 +157,11 @@ h3 {
   border-radius: 5px;
   background: #4e5962;
   border: none;
-  color: #fba332;
+  color: #e5e5e5;
   font-size: 16px;
   font-weight: 700;
   cursor: pointer;
   text-align: center;
-  /* appearance: button; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -209,4 +208,5 @@ h3 {
 .btn:hover {
   transform: scale(0.98);
   box-shadow: rgba(0, 0, 0, 0.821) 0px 5px 15px;
+  color: #fba332;
 }/*# sourceMappingURL=index.css.map */

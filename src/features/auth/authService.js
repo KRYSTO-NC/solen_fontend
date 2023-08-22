@@ -8,6 +8,7 @@ const login = async (userData) => {
 
   if (response.data) {
     localStorage.setItem('userToken', JSON.stringify(response.data.token))
+    localStorage.setItem('userRole', JSON.stringify(response.data.userRole))
 
   }
   return response.data

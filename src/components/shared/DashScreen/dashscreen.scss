@@ -1,0 +1,22 @@
+@import '../../../SASS/reset';
+@import '../../../SASS/variables';
+
+
+.admin-dashbord{
+    display: flex;
+    flex-shrink: 0;
+}
+.dashboard-screen{
+    background-color: $white;
+    height: 100vh;
+    width: 100%;
+    padding: 2rem;
+    color: $white;
+    color: $dark;
+    position: relative;
+}
+
+.dashboard-screen {
+
+    height: 100vh; /* Prend toute la hauteur de la fenêtre */
+}

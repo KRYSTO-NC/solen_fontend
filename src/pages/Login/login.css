@@ -1,0 +1,87 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,100;1,300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62, 5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+p {
+  line-height: 1.7;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  line-height: 2.2;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.form-login-container {
+  width: 500px;
+  z-index: 999;
+  border: 3px solid #fba332;
+  padding: 2rem;
+  border-radius: 5px;
+  background-color: #fba332;
+}
+
+.heading-login {
+  max-width: 1200px;
+}
+.heading-login p {
+  color: hsl(0, 0%, 4%);
+}
+
+.forgot-password {
+  color: #c52929;
+}
+
+.container-login {
+  position: relative; /* Position relative pour contenir l'arrière-plan */
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-image {
+  position: absolute; /* Position absolue par rapport au conteneur */
+  z-index: -1;
+  top: 0;
+  left: 0;
+  background-image: url(../../assets/panneaux-solaire.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  filter: grayscale(100%); /* Rend l'image en noir et blanc */
+  background-color: rgba(0, 0, 0, 0.5); /* Overlay noir avec 50 % d'opacité */
+  background-blend-mode: overlay;
+  opacity: 0.3;
+}/*# sourceMappingURL=login.css.map */

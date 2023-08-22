@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,100;1,300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62, 5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+p {
+  line-height: 1.7;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  line-height: 2.2;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.admin-sidebar {
+  height: 100vh;
+  color: rgb(255, 255, 255);
+  width: 5rem;
+  background-color: #4e5962;
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+}
+
+.round-container {
+  display: flex;
+  justify-content: center;
+  height: 0.2rem;
+}
+
+.round {
+  height: 0.5rem;
+  width: 0.5rem;
+  border-radius: 50%;
+  margin: 0 0.3rem;
+  background-color: #e5e5e5;
+}
+
+.admin-sidebar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.admin-sidebar ul li a svg {
+  height: 2rem;
+  width: 2rem;
+}
+.admin-sidebar ul li a:hover {
+  color: #fba332;
+}
+
+/* Style pour le lien actif */
+.admin-sidebar ul li a.activeLink {
+  color: #fba332;
+}
+
+.admin-sidebar ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1rem;
+  margin: 3rem 0;
+}
+.admin-sidebar ul li {
+  margin: 1rem 0;
+}/*# sourceMappingURL=sidebar.css.map */

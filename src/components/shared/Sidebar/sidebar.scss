@@ -1,0 +1,67 @@
+@import '../../../SASS/reset';
+@import '../../../SASS/variables';
+
+
+.admin-sidebar {
+    height: 100vh;
+    color: rgb(255, 255, 255);
+    width: 5rem;
+    background-color: $secondary;
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+}
+
+
+
+.round-container{
+    display: flex;
+    justify-content: center;
+  
+    height: 0.2rem;
+}
+.round{
+    height: 0.5rem;
+    width: 0.5rem;
+    border-radius: 50%;
+    margin: 0 0.3rem;
+    background-color: $white;
+}
+
+
+
+
+
+.admin-sidebar ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+.admin-sidebar ul li a {
+
+    svg{
+        height: 2rem;
+        width: 2rem;
+    }
+
+    &:hover {
+      color: $primary;
+    }
+  }
+
+/* Style pour le lien actif */
+.admin-sidebar ul li a.activeLink {
+    color: $primary;
+}
+
+.admin-sidebar ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+    margin: 3rem 0;
+    li{
+        margin: 1rem 0;
+    }
+}

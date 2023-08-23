@@ -1,0 +1,9 @@
+@import '../../SASS/reset';
+@import '../../SASS/variables';
+
+.compagnyCard{
+    background-color: #fff;
+    border-radius: $radius;
+    cursor: pointer;
+    padding: 0.7rem;
+}

@@ -60,6 +60,10 @@ h3 {
   }
 }
 
+.userCardContainer {
+  max-height: 80vh; /* Ajustez cette valeur en fonction de vos besoins */
+  overflow-y: auto;
+}
 .userCardContainer .userCard {
   background-color: #fff;
   border: 1px solid #4e5962;

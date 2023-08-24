@@ -1,0 +1,7 @@
+.installation-benneficiaire p {
+  display: flex;
+  justify-content: space-between;
+}
+.installation-benneficiaire p span {
+  color: red;
+}/*# sourceMappingURL=installation.css.map */

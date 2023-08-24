@@ -13,6 +13,7 @@ import AdminInstallations from './pages/Private/AdminInstallations/AdminInstalla
 import AdminContacts from './pages/Private/AdminContacts/AdminContacts'
 import AdminCompagnies from './pages/Private/AdminCompagnies/AdminCompagnies'
 import AdminInterventions from './pages/Private/AdminInterventions/AdminInterventions'
+import ForgotPassword from './pages/ForgotPassword/ForgotPassword'
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Login />} />
             <Route path="/login" element={<Login />} />
+            <Route path="/forgot-password" element={<ForgotPassword />} />
 
             <Route path="/user" element={<ProtectedRoute />}>
               {/* Routes accessible only to users here */}

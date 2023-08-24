@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { toast } from 'react-toastify';
 import { getInstallations } from '../../../features/installation/installationSlice';
 import Spinner from '../../../components/shared/spinner/Spinner';
+import InstallationContainerCard from '../../../components/installation/InstallationContainerCards';
 
 function AdminInstallations() {
 
@@ -30,7 +31,7 @@ function AdminInstallations() {
             <h1>Gestion des Installations</h1>
             <p>La mise en place réussie d'une installation commence par une gestion minutieuse. Dans cette section, vous pouvez organiser, planifier et superviser toutes vos installations.</p>
         </section>
-        
+        <InstallationContainerCard installations={installations.data}/>
   </DashScreen>
   )
 }

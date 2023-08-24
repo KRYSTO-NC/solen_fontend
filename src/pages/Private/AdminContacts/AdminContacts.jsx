@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import Spinner from '../../../components/shared/spinner/Spinner';
 import { getContacts } from '../../../features/contact/contactSlice';
 import { toast } from 'react-toastify';
+import ContactContainerCard from '../../../components/contact/ContactContainerCard';
 
 function AdminContacts() {
 
@@ -29,8 +30,9 @@ function AdminContacts() {
     <DashScreen>
       <section className="heading">
             <h1>Gestion des contacts</h1>
-            <p>La mise en place réussie d'une installation commence par une gestion minutieuse. Dans cette section, vous pouvez organiser, planifier et superviser toutes vos installations.</p>
         </section>
+        {/* <UserContainerCard users={users.data} /> */}
+        <ContactContainerCard contacts={contacts.data} />
   </DashScreen>
   )
 }

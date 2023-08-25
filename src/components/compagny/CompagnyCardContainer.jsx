@@ -35,32 +35,34 @@ function CompagnyCardContainer({ compagny }) {
     }
   }
   return (
-    <div className="userCardContainer">
+    <div>
       {selectedCompagny ? (
         <CompagnyDetails
           compagny={selectedCompagny}
           onBack={() => setSelectedCompagny(null)}
         />
       ) : (
-        compagny.map((compagny) => (
-          <div
-            className="compagnyCard"
-            key={compagny.id}
-            onClick={() => setSelectedCompagny(compagny)}
-          >
-            <div className="compagnyCardHeader">
-              <Tag
-                txt={compagny.type}
-                backgroundColor={getBackgroundColorCompagnyType(compagny.type)}
-              />
-              <p className="boldTxt">{compagny.nomCommercial}</p>
+        <div className="cardContainer">
+          {compagny.map((compagny) => (
+            <div
+              className="compagnyCard"
+              key={compagny.id}
+              onClick={() => setSelectedCompagny(compagny)}
+            >
+              <div className="compagnyCardHeader">
+                <Tag
+                  txt={compagny.type}
+                  backgroundColor={getBackgroundColorCompagnyType(compagny.type)}
+                />
+                <p className="boldTxt">{compagny.nomCommercial}</p>
+              </div>
+              <p>ridet :{compagny.ridet}</p>
             </div>
-            <p> ridet :{compagny.ridet}</p>
-          </div>
-        ))
+          ))}
+        </div>
       )}
     </div>
-  )
+  );
 }
 
 export default CompagnyCardContainer;

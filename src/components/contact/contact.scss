@@ -1,0 +1,12 @@
+
+@import "../../SASS/reset";
+@import "../../SASS/variables";
+
+
+.contact-card {
+    background-color: #fff;
+    box-shadow: $shadow;
+    padding: 1rem;
+    border-radius: $radius;
+    margin: 1rem 1rem;
+}

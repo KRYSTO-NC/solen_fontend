@@ -39,7 +39,10 @@ h3 {
   margin-bottom: 10px;
 }
 
-.userDetails {
-  width: 100%;
+.contact-card {
   background-color: #fff;
-}/*# sourceMappingURL=UserContainerCard.css.map */
+  box-shadow: rgba(151, 151, 151, 0.821) 2px 10px 20px;
+  padding: 1rem;
+  border-radius: 5px;
+  margin: 1rem 1rem;
+}/*# sourceMappingURL=contact.css.map */

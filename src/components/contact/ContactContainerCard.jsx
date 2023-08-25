@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Tag from '../shared/Tag/Tag'
 import ContactDetails from './ContactDetails'
-// import './UserContainerCard.css'
+import './contact.css'
 
 function ContactContainerCard({ contacts }) {
  const [selectedContact, setSelectedContact] = useState(null)
@@ -23,23 +23,25 @@ function ContactContainerCard({ contacts }) {
 
 
 
-  return (
-    <div className="userCardContainer">
-      {selectedContact ? (
-        <ContactDetails contact={selectedContact} onBack={() => setSelectedContact(null)} />
-      ) : (
-        contacts.map((contact) => (
-          <div className='userCard' key={contact.id} onClick={() => setSelectedContact(contact)}>
-            <div className="userCardHeader">
+return (
+  <div>
+    {selectedContact ? (
+      <ContactDetails contact={selectedContact} onBack={() => setSelectedContact(null)} />
+    ) : (
+      <div className="cardContainer">
+        {contacts.map((contact) => (
+          <div className='contact-card' key={contact.id} onClick={() => setSelectedContact(contact)}>
+            <div className="cardHeader">
               <p className='boldTxt'>{contact.firstname} {contact.lastname}</p>
               {/* <Tag txt={user.role} backgroundColor={getBackgroundColorByRole(user.role)} /> */}
             </div>
             <p>{contact.email}</p>
           </div>
-        ))
-      )}
-    </div>
-  )
+        ))}
+      </div>
+    )}
+  </div>
+);
 }
 
 export default ContactContainerCard;

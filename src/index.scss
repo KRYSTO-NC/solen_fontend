@@ -177,3 +177,64 @@
   box-shadow: $shadow;
   color: $primary;
 }
+
+
+
+
+// ===================== container card et cards 
+
+.cardContainer {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 6px;
+
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (min-width: 1280px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  @media (min-width: 1536px) {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+.cardContainer {
+  max-height: 75vh; /* Ajustez cette valeur en fonction de vos besoins */
+  overflow-y: auto;
+  width: 100%;
+
+  .card{
+    background-color: #fff;
+    border: 1px solid $secondary;
+    box-shadow: $shadow;
+    padding: 0.5rem;
+    border-radius: $radius;
+    cursor: pointer;
+    margin: 0.5rem;
+
+    .cardHeader{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+        .boldTxt{
+
+            font-weight: bold;
+        }
+    }
+
+  }
+}
+
+.leaflet-container {
+display: flex;
+border: 3px solid $primary;
+margin: auto;
+  height: 20rem;
+  width: 80%;
+  background-color: #fff;
+
+}

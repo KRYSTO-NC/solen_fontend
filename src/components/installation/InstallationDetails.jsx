@@ -1,11 +1,28 @@
 import { IoIosArrowBack } from "react-icons/io";
 import "./installation.css";
+import { useDispatch, useSelector } from "react-redux";
+import { useEffect } from "react";
+import { toast } from "react-toastify";
+import { getContact } from "../../features/contact/contactSlice";
 
 function InstallationDetails({ installation, onBack }) {
-  console.log(installation);
+  const dispatch = useDispatch();
+
+  const { contact, isLoading, isError, message } = useSelector(
+    (state) => state.contact
+  );
+ 
+  useEffect(() => {
+    if (isError) {
+      toast.error(message);
+    }
+
+    dispatch(getContact(installation.benneficiaire.contact));
+  }, [dispatch, isError, message]);
+  console.log(installation.benneficiaire.contact);
 
   return (
-    <div>
+    <div className="installation-details">
       <button className="btn btn-sm btn-danger" onClick={onBack}>
         <IoIosArrowBack /> Retour
       </button>
@@ -24,15 +41,15 @@ function InstallationDetails({ installation, onBack }) {
       <div className="section installation-benneficiaire">
         <h3>Benneficiaire de de l'installations</h3>
         <p>
-          {" "}
-          numéro de client EEC :{" "}
+   
+          numéro de client EEC :
           <span>{installation.benneficiaire.numClientEEC} </span>
         </p>
       </div>
       <div className="section installation-benneficiaire">
         <h3>Demmandeur de de l'installations</h3>
         <p>
-          {" "}
+        
           numéro de client EEC :{" "}
           <span>{installation.benneficiaire.numClientEEC} </span>
         </p>

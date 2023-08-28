@@ -25,6 +25,8 @@ function AdminMyProfil() {
   }
   return (
     <DashScreen>
+      <div className="container">
+
       <section className="heading">
         <h1>Bonjour, {profil.data.username} !</h1>
         <p>
@@ -66,6 +68,7 @@ function AdminMyProfil() {
             {profil.data.contact ? "" : <button className="btn btn-sm">Enregistrer vos informations de contacts</button>}
         </div>
       </section>
+      </div>
     </DashScreen>
   );
 }

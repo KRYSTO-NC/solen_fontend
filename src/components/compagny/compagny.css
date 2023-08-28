@@ -44,4 +44,23 @@ h3 {
   border-radius: 5px;
   cursor: pointer;
   padding: 0.7rem;
+  margin: 1rem;
+}
+
+.searchAndFilterCompagny {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+.searchAndFilterCompagny div {
+  flex: 1;
+  margin: 0 1rem;
+}
+.searchAndFilterCompagny select {
+  width: 100%;
+  padding: 0.8rem;
+  border: none;
+  outline-color: #fba332;
+  border-radius: 5px;
 }/*# sourceMappingURL=compagny.css.map */

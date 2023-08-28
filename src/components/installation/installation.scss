@@ -1,5 +1,5 @@
-@import '../../SASS/reset';
-@import '../../SASS/variables';
+@import "../../SASS/reset";
+@import "../../SASS/variables";
 
 .installationCardContainer {
   display: grid;
@@ -24,7 +24,7 @@
   overflow-y: auto;
   width: 100%;
 
-  .installationCard{
+  .installationCard {
     background-color: #fff;
     border: 1px solid $secondary;
     box-shadow: $shadow;
@@ -33,22 +33,62 @@
     cursor: pointer;
     margin: 0.5rem;
 
-    .installationCardHeader{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-bottom: 1rem;
-        .boldTxt{
-
-            font-weight: bold;
-        }
+    .installationCardHeader {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+      .boldTxt {
+        font-weight: bold;
+      }
     }
+  }
+}
 
+.installation-details {
+  width: 100%;
+  text-align: left;
+
+  max-height: 90vh; /* Ajustez cette valeur en fonction de vos besoins */
+  overflow-y: auto;
+  width: 100%;
+
+  .title-section {
+    color: white;
+    background-color: $primary;
+    text-align: center;
+    padding: 0.3rem 1rem;
+    border-radius: $radius;
+    margin: 2rem 0;
+  }
+
+  .section-installation-contacts {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    div {
+      border: 2px solid $secondary;
+      width: 40%;
+      padding: 1rem 5rem;
+    }
   }
 }
 
 
-.installation-details{
-    background-color: #fff;
-    width: 100%;
+.emplacement-installation{
+  margin: 2rem 0;
+  h4{
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    background-color: $secondary;
+    padding: 0.3rem 1rem;
+    color: #fff;
+  }
+}
+
+.detail-installation-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }

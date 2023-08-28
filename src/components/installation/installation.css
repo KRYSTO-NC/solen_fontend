@@ -85,6 +85,45 @@ h3 {
 }
 
 .installation-details {
-  background-color: #fff;
   width: 100%;
+  text-align: left;
+  max-height: 90vh; /* Ajustez cette valeur en fonction de vos besoins */
+  overflow-y: auto;
+  width: 100%;
+}
+.installation-details .title-section {
+  color: white;
+  background-color: #fba332;
+  text-align: center;
+  padding: 0.3rem 1rem;
+  border-radius: 5px;
+  margin: 2rem 0;
+}
+.installation-details .section-installation-contacts {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.installation-details .section-installation-contacts div {
+  border: 2px solid #4e5962;
+  width: 40%;
+  padding: 1rem 5rem;
+}
+
+.emplacement-installation {
+  margin: 2rem 0;
+}
+.emplacement-installation h4 {
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  background-color: #4e5962;
+  padding: 0.3rem 1rem;
+  color: #fff;
+}
+
+.detail-installation-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }/*# sourceMappingURL=installation.css.map */

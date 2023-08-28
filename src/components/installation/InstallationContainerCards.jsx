@@ -38,6 +38,10 @@ return (
         <InstallationDetails installation={selectedInstallation} onBack={() => setSelectedInstallation(null)} />
       </div>
     ) : (
+      <>
+     <div className="heading">
+      <h2>Installations</h2>
+     </div>
       <div className="installationCardContainer">
         {installations.map((installation) => (
           <div className='installationCard' key={installation.id} onClick={() => setSelectedInstallation(installation)}>
@@ -49,6 +53,7 @@ return (
           </div>
         ))}
       </div>
+        </>
     )}
   </div>
 )

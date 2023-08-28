@@ -28,11 +28,14 @@ function AdminCompagnies() {
   }
   return (
     <DashScreen>
+      <div className="container">
+
          <section className="heading">
-            <h1>Gestion des Entreprises</h1>
-            <p>Gestion des clients proffesionel</p>
+            <h1>Gestion des Organisations</h1>
+     
         </section>
         <CompagnyCardContainer compagny={compagnies.data}/>
+      </div>
   </DashScreen>
   )
 }

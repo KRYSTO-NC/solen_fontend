@@ -178,10 +178,7 @@
   color: $primary;
 }
 
-
-
-
-// ===================== container card et cards 
+// ===================== container card et cards
 
 .cardContainer {
   display: grid;
@@ -206,7 +203,7 @@
   overflow-y: auto;
   width: 100%;
 
-  .card{
+  .card {
     background-color: #fff;
     border: 1px solid $secondary;
     box-shadow: $shadow;
@@ -215,26 +212,23 @@
     cursor: pointer;
     margin: 0.5rem;
 
-    .cardHeader{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-bottom: 1rem;
-        .boldTxt{
-
-            font-weight: bold;
-        }
+    .cardHeader {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+      .boldTxt {
+        font-weight: bold;
+      }
     }
-
   }
 }
 
 .leaflet-container {
-display: flex;
-border: 3px solid $primary;
-margin: auto;
+  display: flex;
+  border: 3px solid $primary;
+  margin: auto;
   height: 20rem;
-  width: 80%;
+  width: 100%;
   background-color: #fff;
-
 }

@@ -27,11 +27,17 @@ function AdminUsers() {
   }
   return (
     <DashScreen>
-      <section className="heading">
+    
+   <div className="container">
+
+
+          <section className="heading">
         <h1>Gestion des Utilisateurs de l'Application Solen</h1>
       </section>
 
       <UserContainerCard users={users.data} />
+  
+   </div>
     </DashScreen>
   )
 }

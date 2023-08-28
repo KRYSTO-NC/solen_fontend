@@ -86,14 +86,9 @@ function Login() {
         <div className="heading heading-login">
           <h2>Connexion à l'Application Solen</h2>
           <p>
-            Bienvenue sur Solen, votre plateforme dédiée à la gestion
-            énergétique, aux installations solaires, aux interventions et plus
-            encore. Veuillez entrer vos identifiants pour accéder à votre espace
-            personnalisé. Si vous êtes un nouvel utilisateur, contactez votre
+            Bienvenue sur Solen, Veuillez entrer vos identifiants pour accéder à votre espace. Si vous êtes un nouvel utilisateur, contactez votre
             administrateur pour obtenir vos accès. Si vous avez oublié votre mot
-            de passe, utilisez l'option de récupération ci-dessous. Commencez
-            dès maintenant à transformer votre façon de gérer l'énergie avec
-            Solen.
+            de passe, utilisez l'option de récupération ci-dessous.
           </p>
         </div>
         <div className="form-login-container">

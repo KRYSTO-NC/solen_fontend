@@ -1,0 +1,31 @@
+@import "../../../SASS/reset";
+@import "../../../SASS/variables";
+
+
+
+.parameters-screen{
+   display: flex;
+}
+
+
+
+.parameters-aside {
+    height: 100vh;
+    width: 12rem;
+    background-color: white;
+   
+ul {
+    margin-top: 6rem;
+    li{
+        margin-bottom: 3rem;
+        cursor: pointer;
+        text-align: center;
+        text-transform: uppercase;
+        &:hover{
+            background-color: $primary
+        }
+
+    }
+}
+
+}

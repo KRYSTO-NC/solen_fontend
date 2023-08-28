@@ -28,11 +28,14 @@ function AdminContacts() {
   }
   return (
     <DashScreen>
+      <div className="container">
+
       <section className="heading">
             <h1>Gestion des contacts</h1>
         </section>
         {/* <UserContainerCard users={users.data} /> */}
         <ContactContainerCard contacts={contacts.data} />
+      </div>
   </DashScreen>
   )
 }

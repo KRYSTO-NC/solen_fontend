@@ -27,10 +27,9 @@ function AdminInstallations() {
   }
   return (
     <DashScreen>
-         <section className="heading">
-            <h1>Gestion des Installations</h1>
-        </section>
+      <div className="container">
         <InstallationContainerCard installations={installations.data}/>
+      </div>
   </DashScreen>
   )
 }
